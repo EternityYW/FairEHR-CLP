@@ -33,6 +33,7 @@ We evaluate our proposed framework using three EHR datasets: STAnford medicine R
     <img width="75%" alt="image" src="https://github.com/EternityYW/FairEHR-CLP/blob/main/image_sources/data_overview.png">
 </div>
 
+Please get in touch with the corresponding author for sample data inputs.
 
 ## Getting started
 We use STARR dataset as an demonstration example (patient_Stanford_exp.py).
