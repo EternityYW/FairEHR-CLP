@@ -7,6 +7,10 @@ FairEHR-CLP operates through a two-stage process:
 - Data Generation: Synthetic counterparts are created for each patient to introduce diverse demographic identities while maintaining essential health information.
 - Fairness-Aware Predictions: Contrastive learning is employed to align patient representations across sensitive attributes, which are jointly optimized with an MLP classifier using a softmax layer for clinical classification tasks.
 
+<div align="center">
+    <img width="75%" alt="image" src="https://github.com/EternityYW/FairEHR-CLP/blob/main/image_sources/model_framework.png">
+</div>
+
 ## Models
 FairEHR-CLP: Our proposed method is implemented in patient_MIMICIII/MIMICIV/Stanford_exp.py. Note that synthetic notes are generated using Llama2_for_notes.py.
 
@@ -24,6 +28,10 @@ FairEHR-CLP: Our proposed method is implemented in patient_MIMICIII/MIMICIV/Stan
  
 ## Datasets
 We evaluate our proposed framework using three EHR datasets: STAnford medicine Research data Repository (STARR) from Stanford Medicine, MIMIC-III, and MIMIC-IV. The focus is on surgical patients aged 50 or older, a cohort prone to age-related biases like impaired cognition. To avoid patient data overlap, we use the MIMIC-III Clinical Database CareVue subset. The study targets three tasks: classifying delirium, OUD, and 30-day readmission, chosen for their impact on postoperative care and patient safety. Demographic indicators are excluded from clinical notes to concentrate on health conditions. We extract patient data from a 24-hour postoperative period and use MICE imputation to address missing values. Each task is approached as a binary classification problem. The table below represents the class distribution for each task.
+
+<div align="center">
+    <img width="75%" alt="image" src="https://github.com/EternityYW/FairEHR-CLP/blob/main/image_sources/data_overview.png">
+</div>
 
 
 ## Getting started
